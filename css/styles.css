@@ -722,7 +722,10 @@ body {
 }
 
 .modal-form-container {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
+}
+.modal-form-container-privacy {
+  margin-bottom: 24px;
 }
 .modal-form {
   display: flex;
@@ -810,12 +813,12 @@ body {
 }
 
 .modal-form-check-text {
-  display: flex;
-  align-items: center;
-  margin-bottom: 24px;
+  display: block;
   color: var(--subtle-text);
   font-size: 12px;
   cursor: pointer;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 }
 .modal-form-check-text::before {
   content: ' ';
