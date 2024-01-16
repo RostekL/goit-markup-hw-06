@@ -563,7 +563,7 @@
               <input
                 id="user-name"
                 type="text"
-                name="user_name"
+                name="user-name"
                 class="modal-form-input"
                 required
                 pattern="^[a-zA-Z]+$"
@@ -599,7 +599,7 @@
             <div class="modal-form-input-wrapper">
               <input
                 type="email"
-                name="user_mail"
+                name="user-mail"
                 class="modal-form-input"
                 required
               />
@@ -609,15 +609,15 @@
             </div>
           </div>
           <div class="modal-form-container">
-            <label class="modal-form-field-com" for="user-comment">
+            <label class="modal-form-field" for="user-comment">
               <span class="modal-form-input-text">Comment</span>
-              <textarea
-                id="user-comment"
-                name="user-comment"
-                class="modal-form-message"
-                placeholder="Text input"
-              ></textarea>
             </label>
+            <textarea
+              id="user-comment"
+              name="user-comment"
+              class="modal-form-message"
+              placeholder="Text input"
+            ></textarea>
           </div>
           <div class="modal-form-container">
             <input
@@ -629,6 +629,10 @@
               required
             />
             <label for="user-privacy" class="modal-form-check-text"
+              ><span class="checkbox-span"
+                ><svg class="checked" width="10" height="8">
+                  <use href="./images/select-icon.svg"></use>
+                </svg> </span
               >I accept the terms and conditions of the &nbsp;<a href=""
                 >Privacy Policy</a
               ></label
