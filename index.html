@@ -609,27 +609,31 @@
             </label>
           </div>
           <div class="modal-form-container">
-            <label class="modal-form-field-com">
+            <label class="modal-form-field-com" for="user-comment">
               <span class="modal-form-input-text">Comment</span>
               <textarea
-                name="user-message"
+                id="user-comment"
+                name="user-comment"
                 class="modal-form-message"
                 placeholder="Text input"
               ></textarea>
             </label>
           </div>
-          <input
-            id="user-policy"
-            type="checkbox"
-            class="modal-form-check visually-hidden"
-            name="user_policy"
-            required
-          />
-          <label for="user-policy" class="modal-form-check-text"
-            >I accept the terms and conditions of the &nbsp;<a href=""
-              >Privacy Policy</a
-            ></label
-          >
+          <div class="modal-form-container">
+            <input
+              id="user-privacy"
+              type="checkbox"
+              value="true"
+              class="modal-form-check visually-hidden"
+              name="user-privacy"
+              required
+            />
+            <label for="user-privacy" class="modal-form-check-text"
+              >I accept the terms and conditions of the &nbsp;<a href=""
+                >Privacy Policy</a
+              ></label
+            >
+          </div>
           <div class="modal-form-btn">
             <button type="submit" class="modal-form-submit">Send</button>
           </div>
