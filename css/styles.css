@@ -577,11 +577,11 @@ body {
 
 .footer-subscribe-wrapper {
   display: flex;
-  gap: 24px;
 }
 
 .footer-subscribe-form {
   display: flex;
+  gap: 24px;
 }
 
 .subscribe-btn {
