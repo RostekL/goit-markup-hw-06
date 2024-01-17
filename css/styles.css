@@ -577,6 +577,7 @@ body {
 
 .footer-subscribe-wrapper {
   display: flex;
+  gap: 24px;
 }
 
 .footer-subscribe-form {
@@ -584,7 +585,6 @@ body {
 }
 
 .subscribe-btn {
-  margin-left: 24px;
   min-width: 165px;
   height: 40px;
   display: flex;
@@ -625,7 +625,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  gap: 24px;
 }
 
 .footer-subscribe-input::placeholder {
@@ -646,6 +645,7 @@ body {
 }
 /* MODAL ============================================= */
 .backdrop {
+  padding: 72px 24px 24px 24px;
   position: fixed;
   top: 0;
   left: 0;
@@ -658,7 +658,6 @@ body {
 }
 
 .backdrop-modal {
-  padding: 72px 24px 24px 24px;
   position: absolute;
   left: 50%;
   top: 50%;
