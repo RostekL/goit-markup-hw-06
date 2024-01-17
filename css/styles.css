@@ -628,13 +628,8 @@ body {
   gap: 24px;
 }
 
-.footer-subscribe-input:-webkit-autofill {
-  -webkit-box-shadow: inset 0 0 0 50px #2e2f42;
-  -webkit-text-fill-color: #404bbf;
-}
-
 .footer-subscribe-input::placeholder {
-  color: #ffffff;
+  color: var(--white-background);
   font-size: 12px;
   line-height: 2;
   display: flex;
@@ -646,7 +641,7 @@ body {
 .footer-subscribe-text {
   font-weight: 500;
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: var(--white-background);
   margin-bottom: 16px;
 }
 /* MODAL ============================================= */
@@ -663,6 +658,7 @@ body {
 }
 
 .backdrop-modal {
+  padding: 72px 24px 24px 24px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -724,6 +720,9 @@ body {
 .modal-form-container {
   margin-bottom: 16px;
 }
+.modal-form-container-name {
+  margin-bottom: 8px;
+}
 .modal-form-container-privacy {
   margin-bottom: 24px;
 }
@@ -756,6 +755,21 @@ body {
 .checkbox-span {
   width: 16px;
   height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.modal-form-check:checked + .checked-svg {
+  background-color: var(--pressed-state-color);
+  border: none;
+  fill: var(--light-background);
 }
 
 .modal-form-input-wrapper {
@@ -764,8 +778,8 @@ body {
 
 .modal-form-input-icon {
   position: absolute;
-  left: 16px;
   top: 50%;
+  left: 16px;
   transform: translateY(-50%);
   left: 19px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -820,6 +834,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.04em;
 }
+/*
 .modal-form-check-text::before {
   content: ' ';
   display: inline-flex;
@@ -836,22 +851,12 @@ body {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form-check:checked + .modal-form-check-text::before {
-  background: var(--pressed-state-color);
 
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 63%;
-  padding: 4px 3px 4px 3px;
-  outline: none;
-  border: 1px solid #404bbf;
-  fill: #f4f4fd;
-}
 .modal-form-check:focus + .modal-form-check-text::before {
   outline: 1px solid #404bbf;
   border: none;
 }
-
+*/
 .modal-form-submit {
   display: block;
   margin: auto;
