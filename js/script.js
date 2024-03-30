@@ -1,4 +1,4 @@
-// for mobile-close-menu
+//mobile-close-menu
 (() => {
   const refs = {
     openModalBtn: document.querySelector("[data-mobile-open]"),
@@ -15,7 +15,7 @@
 })();
 
 
-// for button-open-modal
+//button-open-modal
 (() => {
   const refs = {
     openModalBtn: document.querySelector("[data-modal-open]"),

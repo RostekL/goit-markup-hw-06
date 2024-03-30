@@ -12,7 +12,7 @@
   --white: #ffffff; /*WHITE*/
   --dairy: #fcfcfc; /*DAIRY*/
 }
-
+/* Global */
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--slate);
@@ -27,23 +27,21 @@ input {
     font-family: inherit;
 }
 
-ul {
-    list-style-type: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
+ul,
 h1,
 h2,
 h3,
 p {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 img {
@@ -55,6 +53,7 @@ img {
 address {
     font-style: normal;
 }
+
 
 .visually-hidden {
     position: absolute;
@@ -638,18 +637,18 @@ address {
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .site-link {
+    .stress-link {
         display: block;
         position: relative;
         padding-top: 24px;
         padding-bottom: 24px;
     }
 
-    .site-link.current {
+    .stress-link.current {
         color: var(--ocean);
     }
 
-    .site-link::after {
+    .stress-link::after {
         position: absolute;
         left: 0;
         bottom: -1px;
@@ -662,8 +661,8 @@ address {
         transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    .site-link:hover::after,
-    .site-link.current::after {
+    .stress-link:hover::after,
+    .stress-link.current::after {
         opacity: 1;
     }
 
