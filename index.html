@@ -17,40 +17,41 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="head-site">
-      <div class="container head-block">
-        <nav class="navigation-site">
+    <!--============================================ HEADER ================== -->
+    <header class="header">
+      <div class="container header-container">
+        <nav class="navigation">
           <a class="logo" href="./index.html"
-            >Web<span class="logo-decoration">Studio</span></a
+            >Web<span class="header-link-span">Studio</span></a
           >
           <ul class="navigation-list item-navigation">
             <li class="navigation-item">
-              <a class="link-decoration site-link active" href="./index.html"
+              <a class="navigation-link site-link current" href="./index.html"
                 >Studio</a
               >
             </li>
             <li class="navigation-item">
-              <a class="link-decoration site-link" href="">Portfolio</a>
+              <a class="navigation-link site-link" href="">Portfolio</a>
             </li>
             <li class="navigation-item">
-              <a class="link-decoration site-link" href="">Contacts</a>
+              <a class="navigation-link site-link" href="">Contacts</a>
             </li>
           </ul>
         </nav>
-        <button class="mobile-btn" type="button" data-mobile-open>
+        <button class="mobile-button" type="button" data-mobile-open>
           <svg class="icon-mobile" width="24" height="24">
             <use href="./images/icons.svg#burger-icon"></use>
           </svg>
         </button>
         <address class="contact">
-          <ul class="items-decoration contact-site">
+          <ul class="items-decoration contact-list">
             <li>
-              <a class="link-decoration" href="mailto:info@devstudio.com"
+              <a class="navigation-link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
             <li>
-              <a class="link-decoration" href="tel:+110001111111"
+              <a class="navigation-link" href="tel:+110001111111"
                 >+11 (000) 111-11-11</a
               >
             </li>
@@ -68,7 +69,7 @@
 
           <ul class="mobile-list">
             <li>
-              <a class="nav-mobile active" href="./index.html">Studio</a>
+              <a class="nav-mobile current" href="./index.html">Studio</a>
             </li>
             <li>
               <a class="nav-mobile" href="">Portfolio</a>
@@ -81,7 +82,7 @@
             <ul class="mobile-address">
               <li>
                 <a
-                  class="mobile-link-address active"
+                  class="mobile-link-address current"
                   href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
@@ -128,26 +129,26 @@
     </header>
 
     <main>
-      <!------------- Hero section ------------->
+     <!--============================================ HERO SECTION (1) ================== -->
       <section class="hero">
-        <div class="container thum-hero">
+        <div class="container hero-container">
           <h1 class="hero-title">
-            Effective Solutions <br />
+            Effective Solutions
             for Your Business
           </h1>
-          <button class="main-btn" type="button" data-modal-open>
+          <button class="main-button" type="button" data-modal-open>
             Order Service
           </button>
         </div>
       </section>
 
-      <!------------- Benefits section ------------->
+      <!--============================================ DESCRIPTION SECTION (2) ================== -->
       <section class="section">
-        <div class="container thumb-benefit">
-          <h2 class="visually-hidden">Our benefits</h2>
+        <div class="container description-container">
+          <h2 class="visually-hidden">why we are the best choice</h2>
           <ul class="general-list">
-            <li class="benefit-item">
-              <div class="benefits-icon">
+            <li class="description-item">
+              <div class="description-icon">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
@@ -158,8 +159,8 @@
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="benefit-item">
-              <div class="benefits-icon">
+            <li class="description-item">
+              <div class="description-icon">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
@@ -170,8 +171,8 @@
                 within the shortest possible time.
               </p>
             </li>
-            <li class="benefit-item">
-              <div class="benefits-icon">
+            <li class="description-item">
+              <div class="description-icon">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
@@ -182,8 +183,8 @@
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li class="benefit-item">
-              <div class="benefits-icon">
+            <li class="description-item">
+              <div class="description-icon">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
@@ -198,7 +199,7 @@
         </div>
       </section>
 
-      <!------------- Our Team ------------->
+        <!--============================================ TEAM SECTION (3) ================== -->
       <section class="team section">
         <div class="container">
           <h2 class="main-title">Our Team</h2>
@@ -377,14 +378,13 @@
           </ul>
         </div>
       </section>
-
-      <!------------- Our Portfolio ------------->
+     <!--============================================ PORTFOLIO SECTION (4) ================== -->
       <section class="section">
         <div class="container">
           <h2 class="main-title">Our Portfolio</h2>
           <ul class="general-list portfolio-list">
             <li class="portfolio-item">
-              <div class="portfolio-box">
+              <div class="portfolio-overlay-container">
                 <picture>
                   <source
                     srcset="
@@ -427,7 +427,7 @@
             </li>
 
             <li class="portfolio-item">
-              <div class="portfolio-box">
+              <div class="portfolio-overlay-container">
                 <picture>
                   <source
                     srcset="
@@ -470,7 +470,7 @@
             </li>
 
             <li class="portfolio-item">
-              <div class="portfolio-box">
+              <div class="portfolio-overlay-container">
                 <picture>
                   <source
                     srcset="
@@ -513,7 +513,7 @@
             </li>
 
             <li class="portfolio-item">
-              <div class="portfolio-box">
+              <div class="portfolio-overlay-container">
                 <picture>
                   <source
                     srcset="
@@ -556,7 +556,7 @@
             </li>
 
             <li class="portfolio-item">
-              <div class="portfolio-box">
+              <div class="portfolio-overlay-container">
                 <picture>
                   <source
                     srcset="
@@ -599,7 +599,7 @@
             </li>
 
             <li class="portfolio-item">
-              <div class="portfolio-box">
+              <div class="portfolio-overlay-container">
                 <picture>
                   <source
                     srcset="
@@ -645,11 +645,11 @@
       </section>
     </main>
 
-    <footer class="site-bootom">
-      <div class="container bootom-blocks">
-        <div class="logo-block">
-          <a class="logo-bootom" href="./index.html"
-            >Web<span class="logo-decoration">Studio</span></a
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-base">
+          <a class="footer-link" href="./index.html"
+            >Web<span class="header-link-span">Studio</span></a
           >
           <p class="general-text">
             Increase the flow of customers and sales for your business with
@@ -658,7 +658,7 @@
         </div>
 
         <div class="social-block">
-          <p class="text-bootom">Social media</p>
+          <p class="footer-copy">Social media</p>
           <ul class="social-list">
             <li class="social-item">
               <a class="social-link" href="https://www.instagram.com/">
@@ -692,7 +692,7 @@
         </div>
 
         <div class="subscribe-block">
-          <p class="text-bootom">Subscribe</p>
+          <p class="footer-copy">Subscribe</p>
           <form class="subscribe-form">
             <label class="subscribe-label">
               <input
@@ -702,7 +702,7 @@
                 placeholder="E-mail"
               />
             </label>
-            <button class="subscribe-btn" type="submit">
+            <button class="subscribe-button" type="submit">
               Subscribe
               <svg class="subscribe-icon" width="24" height="24">
                 <use href="./images/icons.svg#subscribe"></use>
@@ -713,7 +713,7 @@
       </div>
     </footer>
 
-    <!-- Modal window -->
+  <!--============================================ MODAL ================== -->
     <div class="backdrop is-open" data-modal>
       <div class="modal">
         <button class="modal-close" type="button" data-modal-close>
@@ -723,7 +723,7 @@
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form>
-          <div class="filling-form">
+          <div class="input-cont">
             <label class="modal-label" for="user-name"> Name </label>
             <div class="thumb">
               <input
@@ -738,7 +738,7 @@
             </div>
           </div>
 
-          <div class="filling-form">
+          <div class="input-cont">
             <label class="modal-label" for="user-phone"> Phone </label>
             <div class="thumb">
               <input
@@ -753,7 +753,7 @@
             </div>
           </div>
 
-          <div class="filling-form">
+          <div class="input-cont">
             <label class="modal-label" for="user-email"> Email </label>
             <div class="thumb">
               <input
@@ -768,7 +768,7 @@
             </div>
           </div>
 
-          <div class="comment-thumb">
+          <div class="comment-container">
             <label class="modal-label" for="user-comment"> Comment </label>
             <textarea
               class="modal-comment modal-input"
@@ -778,16 +778,16 @@
             ></textarea>
           </div>
 
-          <div class="accept">
+          <div class="checkbox-container">
             <input
-              class="check-input visually-hidden"
+              class="checkbox-real visually-hidden"
               type="checkbox"
               name="user-privacy"
               value="true"
               id="user-privacy"
             />
             <label class="modal-text" for="user-privacy">
-              <span class="icon-check">
+              <span class="checkbox-custom">
                 <svg class="check" width="10" height="8">
                   <use href="./images/icons.svg#check"></use>
                 </svg>
@@ -798,7 +798,7 @@
               </span>
             </label>
           </div>
-          <button class="main-btn" type="submit">Send</button>
+          <button class="main-button" type="submit">Send</button>
         </form>
       </div>
     </div>

@@ -1,22 +1,22 @@
 :root {
-    --primary-brand: #4D5AE5;
-    --pressed-state: #404BBF;
-    --dark: #2E2F42;
-    --Success: #31D0AA;
-    --text: #434455;
-    --subtle-text: #8E8F99;
-    --accent: #E7E9FC;
-    --light: #F4F4FD;
-    --modal-overlay: #2E2F42;
-    --hero-background: #2E2F42;
-    --white-background: #FFFFFF;
-    --modal-background: #FCFCFC;
+  --iris: #4d5ae5; /*IRIS*/
+  --ocean: #404bbf; /*OCEAN*/
+  --slate: #434455; /*SLATE*/
+  --green: #31d0aa; /*GREEN*/
+  --navyblue: #2e2f42; /*NAVY BLUE*/
+  --cloudslate: #8e8f99; /*LIGHT SLATE*/
+  --cornflower: #e7e9fc; /*CORNFLOWER*/
+  --cloud: #f4f4fd; /*CLOUD*/
+  --navybluemodal: #2e2f4266; /*NAVY BLUE MODAL*/
+  --grey: #2e2f42b2; /*GREY*/
+  --white: #ffffff; /*WHITE*/
+  --dairy: #fcfcfc; /*DAIRY*/
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: var(--text);
-    background-color: var(--white-background);
+    color: var(--slate);
+    background-color: var(--white);
 }
 
 button {
@@ -63,8 +63,6 @@ address {
     margin: -1px;
     border: 0;
     padding: 0;
-
-    white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
@@ -73,22 +71,20 @@ address {
 .container {
     padding-right: 15px;
     padding-left: 15px;
-
     margin-left: auto;
     margin-right: auto;
 }
 
-/* --------- Mobile site --------- */
+/* =============================== Mobile ========================*/
 
-/* --------- Header and Features part --------- */
 @media screen and (max-width: 767px) {
 
-    /* --------- Header part --------- */
+    /* =============================== header ========================*/
 
     .logo {
         display: block;
 
-        color: var(--primary-brand);
+        color: var(--iris);
         font-family: 'Raleway', sans-serif;
         font-size: 18px;
         font-weight: 700;
@@ -99,8 +95,8 @@ address {
         margin-right: 76px;
     }
 
-    .logo-decoration {
-        color: var(--dark);
+    .header-link-span {
+        color: var(--navyblue);
     }
 
     .navigation-list {
@@ -111,18 +107,18 @@ address {
         display: none;
     }
 
-    .head-site {
+    .header {
         padding-top: 17.5px;
         padding-bottom: 17.5px;
     }
 
-    .head-block {
+    .header-container {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
-    .mobile-btn {
+    .mobile-button {
         border: none;
         background-color: transparent;
         padding: 0;
@@ -130,18 +126,17 @@ address {
     }
 
     .icon-mobile {
-        fill: var(--dark);
+        fill: var(--navyblue);
     }
 
     .mobile-menu {
         position: fixed;
         width: 100%;
         height: 100%;
-        z-index: 20;
-
+        z-index: 3;
         top: 0;
         left: 0;
-        background-color: var(--modal-background);
+        background-color: var(--dairy);
 
         opacity: 0;
         visibility: hidden;
@@ -175,7 +170,7 @@ address {
         width: 24px;
         height: 24px;
 
-        background-color: var(--accent);
+        background-color: var(--cornflower);
         border-radius: 50%;
         border: 1px solid rgba(0, 0, 0, 0.10);
     }
@@ -183,7 +178,7 @@ address {
     .nav-mobile {
         display: block;
 
-        color: var(--dark);
+        color: var(--navyblue);
         font-size: 36px;
         font-weight: 700;
         line-height: 1.11;
@@ -195,7 +190,7 @@ address {
 
     .nav-mobile:hover,
     .nav-mobile:focus {
-        color: var(--pressed-state);
+        color: var(--ocean);
     }
 
     .mobile-list {
@@ -209,7 +204,7 @@ address {
     .mobile-link-address {
         display: block;
 
-        color: var(--dark);
+        color: var(--navyblue);
         font-size: 20px;
         font-weight: 500;
         line-height: 1.2;
@@ -220,33 +215,33 @@ address {
 
     .mobile-link-address:hover,
     .mobile-link-address:focus {
-        color: var(--pressed-state);
+        color: var(--ocean);
     }
 
     .mobile-menu .social-list {
         gap: 40px;
     }
 
-    .nav-mobile.active,
-    .mobile-link-address.active {
-        color: var(--pressed-state);
+    .nav-mobile.current,
+    .mobile-link-address.current {
+        color: var(--ocean);
     }
 
-    /* --------- Features part --------- */
+    /* =============================== description ========================*/
 
 
-    .benefits-icon {
+    .description-icon {
         display: none;
     }
 
-    .thumb-benefit {
+    .description-container {
         width: 100%;
     }
 
     .general-title {
         text-align: center;
 
-        color: var(--dark);
+        color: var(--navyblue);
         font-size: 36px;
         font-weight: 700;
         line-height: 1.11;
@@ -263,12 +258,13 @@ address {
         letter-spacing: 0.02em;
     }
 
-    .benefit-item:not(:last-child) {
+    .description-item:not(:last-child) {
         margin-bottom: 72px;
     }
 }
 
-/* -------------- Hero, Team, Portfolio, Footer part ---------------- */
+
+/* =============================== hero/team/portfolio ========================*/
 @media screen and (min-width: 320px) {
     .container {
         width: 320px;
@@ -279,12 +275,10 @@ address {
         padding-bottom: 96px;
     }
 
-    /* -------------- Hero part ---------------- */
-
     .hero {
         max-width: 320px;
 
-        background-color: var(--hero-background);
+        background-color: var(--navyblue);
         background-image: linear-gradient(rgba(46, 47, 66, 0.70),
                 rgba(46, 47, 66, 0.70)), url(../images/people-office-mobile.jpg);
         background-repeat: no-repeat;
@@ -299,8 +293,6 @@ address {
         margin-right: auto;
     }
 
-    /* --------- Add background-image 2x --------- */
-
     @media screen and (min-width: 320px) and (min-resolution: 192dpi) {
         .hero {
             background-image: linear-gradient(rgba(46, 47, 66, 0.70),
@@ -309,46 +301,40 @@ address {
     }
 
     .hero-title {
-
-        color: var(--white-background);
+        color: var(--white);
         text-align: center;
         font-size: 36px;
         font-weight: 700;
         line-height: 1.11;
         letter-spacing: 0.02em;
-
         margin-bottom: 72px;
     }
 
-    .main-btn {
+    .main-button {
         display: block;
         min-width: 169px;
         height: 56px;
-
-        color: var(--white-background);
+        color: var(--white);
         font-size: 16px;
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.04em;
-
-        background-color: var(--primary-brand);
+        background-color: var(--iris);
         border-radius: 4px;
         border: none;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
         padding: 16px 32px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .main-btn:hover,
-    .main-btn:focus {
-        background-color: var(--pressed-state);
+    .main-button:hover,
+    .main-button:focus {
+        background-color: var(--ocean);
     }
 
-    /* -------------- Team part ---------------- */
+  /* =============================== team ========================*/
     .general-list {
         display: flex;
         flex-direction: column;
@@ -357,7 +343,7 @@ address {
     }
 
     .team-info .general-title {
-        color: var(--dark);
+        color: var(--navyblue);
         text-align: center;
         font-size: 20px;
         font-weight: 500;
@@ -370,24 +356,23 @@ address {
     }
 
     .team {
-        background-color: var(--light);
+        background-color: var(--cloud);
     }
 
     .main-title {
-        color: var(--dark);
+        color: var(--navyblue);
         text-align: center;
         font-size: 36px;
         font-weight: 700;
         line-height: 1.11;
         letter-spacing: 0.02em;
         text-transform: capitalize;
-
         margin-bottom: 72px;
     }
 
     .team-item {
         width: 264px;
-        background-color: var(--white-background);
+        background-color: var(--white);
         border-radius: 0px 0px 4px 4px;
         box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     }
@@ -421,27 +406,26 @@ address {
         width: 40px;
         height: 40px;
         border-radius: 50%;
-        background-color: var(--primary-brand);
-
+        background-color: var(--iris);
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .team-info .social-link:hover,
     .team-info .social-link:focus {
-        background-color: var(--pressed-state);
+        background-color: var(--ocean);
     }
 
     .icon {
-        fill: var(--light);
+        fill: var(--cloud);
     }
 
-    /* -------------- Portfolio part ---------------- */
+    /* =============================== portfolio ========================*/
     .overlay {
         display: none;
     }
 
     .portfolio-item {
-        background: var(--white-background);
+        background: var(--white);
         box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
     }
 
@@ -451,12 +435,12 @@ address {
 
     .portfolio-info {
         padding: 32px 16px;
-        border: 1px solid var(--light);
+        border: 1px solid var(--cloud);
         border-top: none;
     }
 
     .portfolio-info .general-title {
-        color: var(--dark);
+        color: var(--navyblue);
         text-align-last: left;
         font-size: 20px;
         font-weight: 500;
@@ -468,26 +452,25 @@ address {
         font-weight: 400;
     }
 
-    /* -------------- Footer part ---------------- */
+    /* =============================== footer ========================*/
 
-    .site-bootom {
-        background-color: var(--dark);
+    .footer {
+        background-color: var(--navyblue);
         padding-top: 100px;
         padding-bottom: 100px;
     }
 
-    .logo-block {
+    .footer-base {
         margin-left: auto;
         margin-right: auto;
         width: 264px;
         margin-bottom: 72px;
     }
 
-    .logo-bootom {
+    .footer-link {
         display: flex;
         justify-content: center;
-
-        color: var(--primary-brand);
+        color: var(--iris);
         font-family: 'Raleway', sans-serif;
         font-size: 18px;
         font-weight: 700;
@@ -498,23 +481,21 @@ address {
         margin-bottom: 16px;
     }
 
-    .site-bootom .general-text {
-
+    .footer .general-text {
         font-weight: 400;
-        color: var(--white-background);
+        color: var(--white);
     }
 
-    .site-bootom .logo-decoration {
-        color: var(--light);
+    .footer .header-link-span {
+        color: var(--cloud);
     }
 
-    .site-bootom .general-text {
-        color: var(--light);
+    .footer .general-text {
+        color: var(--cloud);
     }
 
-    .text-bootom {
-        color: var(--white-background);
-
+    .footer-copy {
+        color: var(--white);
         text-align: center;
         font-size: 16px;
         font-weight: 500;
@@ -531,7 +512,7 @@ address {
 
     .social-block .social-link:hover,
     .social-block .social-link:focus {
-        background-color: var(--Success);
+        background-color: var(--green);
     }
 
     .subscribe-form {
@@ -543,56 +524,46 @@ address {
     .subscribe-input {
         width: 264px;
         height: 40px;
-
-        color: var(--white-background);
+        color: var(--white);
         font-size: 12px;
         line-height: 1.5;
         letter-spacing: 0.04em;
         padding-left: 16px;
-
         border-radius: 4px;
-        border: 1px solid var(--white-background);
+        border: 1px solid var(--white);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         background-color: transparent;
         outline: none;
-
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
         margin-bottom: 16px;
     }
 
     .subscribe-input::placeholder {
-        color: var(--white-background);
+        color: var(--white);
     }
 
-    .subscribe-btn {
+    .subscribe-button {
         display: flex;
         justify-content: center;
         align-items: center;
-
         min-width: 165px;
         height: 40px;
-
-        color: var(--white-background);
+        color: var(--white);
         font-size: 16px;
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.04em;
-
         border-radius: 4px;
         border: none;
-        background-color: var(--primary-brand);
-
+        background-color: var(--iris);
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
         margin-left: auto;
         margin-right: auto;
     }
 
-    .subscribe-btn:hover,
-    .subscribe-btn:focus {
-        background-color: var(--pressed-state);
+    .subscribe-button:hover,
+    .subscribe-button:focus {
+        background-color: var(--ocean);
     }
 
     .subscribe-icon {
@@ -600,10 +571,10 @@ address {
     }
 }
 
-/* --------- End Mobile site --------- */
 
 
-/* --------- Tablet site --------- */
+
+/* =============================== tablet ========================*/
 
 @media screen and (min-width: 768px) {
     .container {
@@ -614,42 +585,40 @@ address {
 
     .logo {
         display: block;
-
-        color: var(--primary-brand);
+        color: var(--iris);
         font-family: 'Raleway', sans-serif;
         font-size: 18px;
         font-weight: 700;
         line-height: 1.17;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-
         margin-right: 76px;
     }
 
-    .logo-decoration {
-        color: var(--dark);
+    .header-link-span {
+        color: var(--navyblue);
     }
 
     .mobile-menu {
         display: none;
     }
 
-    .mobile-btn {
+    .mobile-button {
         display: none;
     }
 
-    .head-site {
-        border-bottom: 1px solid var(--accent);
+    .header {
+        border-bottom: 1px solid var(--cornflower);
         box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
     }
 
-    .head-block {
+    .header-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    .navigation-site {
+    .navigation {
         display: flex;
         align-items: center;
     }
@@ -660,26 +629,24 @@ address {
         gap: 40px;
     }
 
-    .link-decoration {
-        color: var(--dark);
+    .navigation-link {
+        color: var(--navyblue);
         font-size: 16px;
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.02em;
-
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .site-link {
         display: block;
         position: relative;
-
         padding-top: 24px;
         padding-bottom: 24px;
     }
 
-    .site-link.active {
-        color: var(--pressed-state);
+    .site-link.current {
+        color: var(--ocean);
     }
 
     .site-link::after {
@@ -690,33 +657,31 @@ address {
         min-height: 4px;
         border-radius: 2px;
         content: "";
-        background-color: var(--pressed-state);
+        background-color: var(--ocean);
         opacity: 0;
-
         transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .site-link:hover::after,
-    .site-link.active::after {
+    .site-link.current::after {
         opacity: 1;
     }
 
-    .items-decoration .link-decoration {
-        color: var(--text);
+    .items-decoration .navigation-link {
+        color: var(--slate);
         font-weight: 400;
     }
 
-    .link-decoration:hover,
-    .link-decoration:focus {
-        color: var(--pressed-state);
+    .navigation-link:hover,
+    .navigation-link:focus {
+        color: var(--ocean);
     }
 
-    /* --------- Hero part --------- */
+   /* =============================== hero ========================*/
 
     .hero {
         max-width: 768px;
-
-        background-color: var(--hero-background);
+        background-color: var(--navyblue);
         background-image: linear-gradient(rgba(46, 47, 66, 0.70),
                 rgba(46, 47, 66, 0.70)),
             url(../images/people-office-tablet.jpg);
@@ -724,14 +689,11 @@ address {
         background-size: cover;
         background-position: center;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
         padding-top: 112px;
         padding-bottom: 112px;
         margin-right: auto;
         margin-left: auto;
     }
-
-    /* --------- Add background-image 2x --------- */
 
     @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
         .hero {
@@ -742,50 +704,44 @@ address {
 
     .hero-title {
         max-width: 496px;
-
-        color: var(--white-background);
+        color: var(--white);
         text-align: center;
         font-size: 56px;
         font-weight: 700;
         line-height: 1.07;
         letter-spacing: 0.02em;
-
         margin-right: auto;
         margin-left: auto;
         margin-bottom: 36px;
     }
 
-    .main-btn {
+    .main-button {
         display: block;
         min-width: 169px;
         height: 56px;
-
-        color: var(--white-background);
+        color: var(--white);
         font-size: 16px;
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.04em;
-
-        background-color: var(--primary-brand);
+        background-color: var(--iris);
         border-radius: 4px;
         border: none;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
         padding: 16px 32px;
         margin-right: auto;
         margin-left: auto;
     }
 
-    .main-btn:hover,
-    .main-btn:focus {
-        background-color: var(--pressed-state);
+    .main-button:hover,
+    .main-button:focus {
+        background-color: var(--ocean);
     }
 
-    /* --------- Features part --------- */
+    /* =============================== description ========================*/
 
-    .benefits-icon {
+    .description-icon {
         display: none;
     }
 
@@ -796,19 +752,17 @@ address {
         row-gap: 72px;
     }
 
-    .benefit-item {
+    .description-item {
         flex-basis: calc((100% - 24px) / 2);
     }
 
     .general-title {
-        color: var(--dark);
-
+        color: var(--navyblue);
         font-size: 36px;
         font-weight: 700;
         line-height: 1.11;
         letter-spacing: 0.02em;
         text-transform: capitalize;
-
         margin-bottom: 8px;
     }
 
@@ -819,7 +773,7 @@ address {
         letter-spacing: 0.02em;
     }
 
-    /* --------- Our Team part --------- */
+   /* =============================== team ========================*/
 
     .general-list {
         flex-direction: row;
@@ -831,7 +785,7 @@ address {
         margin-bottom: 0;
     }
 
-    /* --------- Portfolio part --------- */
+    /* =============================== portfolio ========================*/
 
     .portfolio-list {
         flex-wrap: wrap;
@@ -846,21 +800,20 @@ address {
         width: calc((100% - 24px) / 2);
     }
 
-    /* --------- Footer part --------- */
+    /* =============================== footer ========================*/
 
-    .bootom-blocks {
+    .footer-container {
         display: flex;
         flex-wrap: wrap;
-
         padding-left: 108px;
     }
 
-    .logo-block {
+    .footer-base {
         margin-left: 0;
         margin-right: 24px;
     }
 
-    .logo-bootom {
+    .footer-link {
         display: flex;
         justify-content: start;
     }
@@ -869,7 +822,7 @@ address {
         width: 208px;
     }
 
-    .text-bootom {
+    .footer-copy {
         text-align: left;
     }
 
@@ -879,10 +832,8 @@ address {
     }
 }
 
-/* --------- End Tablet site --------- */
 
-
-/* --------- Desktop site --------- */
+/* =============================== desctop ========================*/
 
 @media screen and (min-width: 1158px) {
     .container {
@@ -894,15 +845,14 @@ address {
         padding-bottom: 120px;
     }
 
-    /* --------- Header part --------- */
+  /* =============================== header ========================*/
 
-    .contact-site {
+    .contact-list {
         display: flex;
         gap: 40px;
     }
 
-    /* --------- Hero part --------- */
-
+   /* =============================== hero ========================*/
     .hero {
         max-width: 1440px;
         background-image: linear-gradient(rgba(46, 47, 66, 0.70),
@@ -911,8 +861,6 @@ address {
         padding-top: 188px;
         padding-bottom: 188px;
     }
-
-    /* --------- Add background-image 2x --------- */
 
     @media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
         .hero {
@@ -925,20 +873,20 @@ address {
         margin-bottom: 48px;
     }
 
-    /* --------- Features part --------- */
+   /* =============================== description ========================*/
 
-    .benefit-item {
+    .description-item {
         flex-basis: calc((100% - 72px) / 4);
     }
 
-    .benefits-icon {
+    .description-icon {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 112px;
         border-radius: 4px;
-        border: 1px solid var(--subtle-text);
-        background-color: var(--light);
+        border: 1px solid var(--cloudslate);
+        background-color: var(--cloud);
         margin-bottom: 8px;
     }
 
@@ -953,13 +901,10 @@ address {
         letter-spacing: 0.002em;
     }
 
-    /* --------- Team part --------- */
-
     .general-list {
         flex-wrap: nowrap;
     }
 
-    /* --------- Portfolio part --------- */
 
     .general-list.portfolio-list {
         flex-wrap: wrap;
@@ -980,21 +925,19 @@ address {
         transform: translateY(0%);
     }
 
-    .portfolio-box {
+    .portfolio-overlay-container {
         position: relative;
         overflow: hidden;
     }
 
     .overlay {
         display: block;
-
         position: absolute;
         width: 100%;
         height: 100%;
-        background-color: var(--primary-brand);
+        background-color: var(--iris);
         top: 0;
         left: 0;
-
         transform: translateY(100%);
         transition: transform 250ms ease-in-out;
     }
@@ -1003,22 +946,21 @@ address {
         transform: translateY(0);
     }
 
-    .portfolio-box .general-text {
-        color: var(--light);
+    .portfolio-overlay-container .general-text {
+        color: var(--cloud);
         padding: 40px 32px;
-
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    /* --------- Footer part --------- */
-    .bootom-blocks {
+    /* =============================== footer ========================*/
+    .footer-container {
         display: flex;
         justify-content: space-around;
 
         padding-left: 15px;
     }
 
-    .logo-block {
+    .footer-base {
         margin: 0;
     }
 
@@ -1027,10 +969,7 @@ address {
     }
 }
 
-/* --------- End Desktop site --------- */
-
-
-/* --------- Modal window --------- */
+/* =============================== modal ========================*/
 
 @media screen and (min-width: 320px) {
     .backdrop {
@@ -1039,9 +978,8 @@ address {
         left: 0;
         width: 100%;
         height: 100%;
-        z-index: 10;
+        z-index: 2;
         background-color: rgba(46, 47, 66, 0.40);
-
         opacity: 1;
         transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -1058,15 +996,11 @@ address {
         left: 50%;
         width: 288px;
         min-height: 584px;
-
         transform: translate(-50%, -50%) scale(1);
-
         border-radius: 4px;
-        background-color: var(--modal-background);
+        background-color: var(--dairy);
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
         padding: 72px 24px 24px 24px;
     }
 
@@ -1076,17 +1010,13 @@ address {
         right: 24px;
         width: 24px;
         height: 24px;
-
         display: flex;
         justify-content: center;
         align-items: center;
-
-        background-color: var(--accent);
+        background-color: var(--cornflower);
         border-radius: 50%;
         border: 1px solid rgba(0, 0, 0, 0.10);
-
         padding: 0;
-
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
@@ -1096,34 +1026,31 @@ address {
 
     .modal-close:hover,
     .modal-close:focus {
-        fill: var(--white-background);
-        background-color: var(--pressed-state);
+        fill: var(--white);
+        background-color: var(--ocean);
         border: none;
     }
 
     .modal-title {
-        color: var(--dark);
+        color: var(--navyblue);
         text-align: center;
         font-size: 16px;
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.02em;
-
         margin-bottom: 16px;
     }
 
-    .filling-form {
+    .input-cont {
         margin-bottom: 8px;
     }
 
     .modal-label {
         margin-bottom: 8px;
-
-        color: var(--subtle-text);
+        color: var(--cloudslate);
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
-
         display: block;
         margin-bottom: 4px;
     }
@@ -1139,16 +1066,13 @@ address {
         border: 1px solid rgba(46, 47, 66, 0.40);
         background-color: transparent;
         outline: transparent;
-
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
         padding-left: 38px
     }
 
     .modal-input:focus {
-        border: 1px solid var(--primary-brand);
+        border: 1px solid var(--iris);
     }
 
     .modal-icon {
@@ -1157,17 +1081,15 @@ address {
         left: 16px;
         width: 18px;
         height: 24px;
-
         transform: translateY(-50%);
-
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .modal-input:focus+.modal-icon {
-        fill: var(--primary-brand);
+        fill: var(--iris);
     }
 
-    .comment-thumb {
+    .comment-container {
         margin-bottom: 16px
     }
 
@@ -1178,21 +1100,19 @@ address {
         line-height: 1.17;
         letter-spacing: 0.04em;
         color: rgba(46, 47, 66, 0.4);
-
         padding: 8px 16px;
-
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .modal-comment:focus {
-        border-color: var(--primary-brand);
+        border-color: var(--iris);
     }
 
     .modal-comment.modal-input {
         padding: 8px 16px;
     }
 
-    .accept {
+    .checkbox-container {
         position: relative;
         margin-bottom: 24px;
     }
@@ -1200,26 +1120,22 @@ address {
     .modal-text {
         display: flex;
         align-items: center;
-        color: var(--subtle-text);
+        color: var(--cloudslate);
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
     }
 
-    .icon-check {
+    .checkbox-custom {
         display: flex;
         align-items: center;
         justify-content: center;
-
         fill: transparent;
-
         width: 16px;
         height: 16px;
         border-radius: 2px;
         border: 1px solid rgba(46, 47, 66, 0.40);
-
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
         margin-right: 8px;
     }
 
@@ -1228,14 +1144,14 @@ address {
         height: 8px;
     }
 
-    .check-input:checked+.modal-text .icon-check {
-        background-color: var(--pressed-state);
+    .checkbox-real:checked+.modal-text .checkbox-custom {
+        background-color: var(--ocean);
         border: none;
-        fill: var(--light);
+        fill: var(--cloud);
     }
 
     .accent {
-        color: var(--primary-brand);
+        color: var(--iris);
         text-decoration: underline;
     }
 }
