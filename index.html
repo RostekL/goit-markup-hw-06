@@ -133,8 +133,7 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">
-            Effective Solutions
-            for Your Business
+            Effective Solutions for Your Business
           </h1>
           <button class="main-button" type="button" data-modal-open>
             Order Service
@@ -405,7 +404,7 @@
                       ./images/picture1-mobile.jpg    1x,
                       ./images/picture1-mobile@2x.jpg 2x
                     "
-                    media="(max-width: 767px)"
+                    media="(max-width: 768px)"
                   />
                   <img
                     src="./images/picture1-desktop.jpg"
@@ -448,7 +447,7 @@
                       ./images/picture2-mobile.jpg    1x,
                       ./images/picture2-mobile@2x.jpg 2x
                     "
-                    media="(max-width: 767px)"
+                    media="(max-width: 768px)"
                   />
                   <img
                     src="./images/picture2-desktop.jpg"
@@ -491,7 +490,7 @@
                       ./images/picture3-mobile.jpg    1x,
                       ./images/picture3-mobile@2x.jpg 2x
                     "
-                    media="(max-width: 767px)"
+                    media="(max-width: 768px)"
                   />
                   <img
                     src="./images/picture3-desktop.jpg"
@@ -534,7 +533,7 @@
                       ./images/picture4-mobile.jpg    1x,
                       ./images/picture4-mobile@2x.jpg 2x
                     "
-                    media="(max-width: 767px)"
+                    media="(max-width: 768px)"
                   />
                   <img
                     src="./images/picture4-desktop.jpg"
@@ -577,7 +576,7 @@
                       ./images/picture5-mobile.jpg    1x,
                       ./images/picture5-mobile@2x.jpg 2x
                     "
-                    media="(max-width: 767px)"
+                    media="(max-width: 768px)"
                   />
                   <img
                     src="./images/picture5-desktop.jpg"
@@ -620,7 +619,7 @@
                       ./images/picture6-mobile.jpg    1x,
                       ./images/picture6-mobile@2x.jpg 2x
                     "
-                    media="(max-width: 767px)"
+                    media="(max-width: 768px)"
                   />
                   <img
                     src="./images/picture6-desktop.jpg"
@@ -724,13 +723,14 @@
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form>
           <div class="input-cont">
-            <label class="modal-label" for="user-name"> Name </label>
+            <label class="modal-label" for="user-name">Name</label>
             <div class="thumb">
               <input
                 class="modal-input"
                 type="text"
                 name="user-name"
                 id="user-name"
+                required
               />
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#person"></use>
@@ -739,13 +739,14 @@
           </div>
 
           <div class="input-cont">
-            <label class="modal-label" for="user-phone"> Phone </label>
+            <label class="modal-label" for="user-phone">Phone</label>
             <div class="thumb">
               <input
                 class="modal-input"
                 type="tel"
                 name="user-phone"
                 id="user-phone"
+                required
               />
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#phone"></use>
@@ -754,13 +755,14 @@
           </div>
 
           <div class="input-cont">
-            <label class="modal-label" for="user-email"> Email </label>
+            <label class="modal-label" for="user-email">Email</label>
             <div class="thumb">
               <input
                 class="modal-input"
                 type="email"
                 name="user-email"
                 id="user-email"
+                required
               />
               <svg class="modal-icon" width="18" height="24">
                 <use href="./images/icons.svg#email"></use>
@@ -769,12 +771,13 @@
           </div>
 
           <div class="comment-container">
-            <label class="modal-label" for="user-comment"> Comment </label>
+            <label class="modal-label" for="user-comment">Comment</label>
             <textarea
               class="modal-comment modal-input"
               name="user-comment"
               placeholder="Text input"
               id="user-comment"
+              required
             ></textarea>
           </div>
 
@@ -785,6 +788,7 @@
               name="user-privacy"
               value="true"
               id="user-privacy"
+
             />
             <label class="modal-text" for="user-privacy">
               <span class="checkbox-custom">
