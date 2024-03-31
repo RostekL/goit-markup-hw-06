@@ -76,13 +76,12 @@ address {
 
 /* =============================== Mobile ========================*/
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
     /* =============================== header ========================*/
 
     .logo {
         display: block;
-
         color: var(--iris);
         font-family: 'Raleway', sans-serif;
         font-size: 18px;
@@ -275,8 +274,6 @@ address {
     }
 
     .hero {
-        max-width: 320px;
-
         background-color: var(--navyblue);
         background-image: linear-gradient(rgba(46, 47, 66, 0.70),
                 rgba(46, 47, 66, 0.70)), url(../images/people-office-mobile.jpg);
@@ -580,7 +577,7 @@ address {
         width: 768px;
     }
 
-    /* --------- Header part --------- */
+ /* =============================== header ========================*/
 
     .logo {
         display: block;
